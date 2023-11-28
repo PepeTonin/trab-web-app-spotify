@@ -17,6 +17,9 @@ function App() {
   const clientId = "4eff4599f5244abead69fbd53c7590e9";
   const params = new URLSearchParams(window.location.search);
   const code = params.get("code");
+  console.log(params);
+  console.log(code);
+  
 
   const [isFetchingData, setIsFetchingData] = useState(true);
 
@@ -81,7 +84,6 @@ function App() {
   } else {
     return (
       <div className="root-container">
-
         {profile && (
           <div className="profile-container">
             <img
